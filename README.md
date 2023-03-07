@@ -24,6 +24,6 @@ a listing of the attributions for your game assets (art, sounds, etc):
 
   Swan Mesh: https://sketchfab.com/3d-models/swan-235a884d0a314b0fb9a2b235c711cb8c
 
-
+  Tiles and environment: https://assetstore.unity.com/packages/3d/environments/free-low-poly-desert-pack-106709
 
 a paragraph discussing the contributions of each team member to the final game:

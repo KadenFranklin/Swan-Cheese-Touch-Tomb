@@ -31,12 +31,6 @@ public class FollowSteer : MonoBehaviour {
 		speed *= 1.2f;
 	}
 
-	void OnDrawGizmos() {
-		Gizmos.color = Color.yellow;
-		Vector3 direction = body.velocity;
-		Gizmos.DrawRay(transform.position, direction);
-	}
-
 	void OnCollisionEnter(Collision coll) {
 		if (coll.gameObject == target) {
 			GetComponent<AudioSource>().Play();

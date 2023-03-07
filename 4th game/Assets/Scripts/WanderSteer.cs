@@ -7,12 +7,12 @@ public class WanderSteer : MonoBehaviour
 	public float speed;
 	public float angle;
 
-	private Rigidbody2D body;
+	private Rigidbody body;
 
 	// Use this for initialization
 	void Start()
 	{
-		body = GetComponent<Rigidbody2D>();
+		body = GetComponent<Rigidbody>();
 	}
 
 	// Update is called once per frame
