@@ -10,6 +10,7 @@ public class FPSCamera : MonoBehaviour
     public float minTurnAngle = -90.0f;
     public float maxTurnAngle = 90.0f;
     private float rotX;
+    public GameObject fish;
 
     void Update()
     {
@@ -39,5 +40,20 @@ public class FPSCamera : MonoBehaviour
 
         transform.Translate(dir * moveSpeed * Time.deltaTime);
     }
+
+   // void RotateFish()
+   // {   // MOVE Left
+   //     if (Input.GetAxis("Mouse X") > 0)
+   //     {
+   //         fish = fish.transform.Rotate(0, 0, 0);
+   //     }
+
+        // MOVE Right
+   //     if (Input.GetAxis("Mouse X") < 0)
+   //     {
+   //         fish = fish.transform.Rotate(0, 0, 0);
+   //     }
+   // }
+
 
 }
