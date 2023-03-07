@@ -117,7 +117,7 @@ MonoBehaviour:
   _customWaves: 0
   randomSeed: 891
   _basicWaveSettings:
-    numWaves: 6
+    numWaves: 3
     amplitude: 0.6
     direction: -176
     wavelength: 8
