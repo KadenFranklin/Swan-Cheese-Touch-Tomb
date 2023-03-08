@@ -10,17 +10,17 @@ public class AvoidSteer : MonoBehaviour {
 	public static float minDist;
 
 	private bool tagged;
-	private Rigidbody2D body;
+	private Rigidbody body;
 
 	// Use this for initialization
 	void Start () {
-		body = GetComponent<Rigidbody2D>();
+		body = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
 
-		Vector2 desired = target.transform.position - transform.position;
+		Vector3 desired = target.transform.position - transform.position;
 
 		if (desired.magnitude < minDist) {
 			print("avoiding wolf");
@@ -31,21 +31,12 @@ public class AvoidSteer : MonoBehaviour {
 
 	}
 
-	void OnCollisionEnter2D(Collision2D coll) {
+	void OnCollisionEnter(Collision coll) {
 		if (!tagged && coll.gameObject == target) {
 			print("WOLF!");
 			dog.GetComponent<FollowSteer>().IncreaseSpeed();
 			minDist += 2;
 			tagged = true;
-			GetComponent<AudioSource>().Play ();
 		}
-
-	}
-
-	void OnDrawGizmos() {
-		Gizmos.color = Color.blue;
-		Vector3 direction = GetComponent<Rigidbody2D>().velocity;
-		Gizmos.DrawRay(transform.position, direction);
-		Gizmos.DrawWireSphere(transform.position, minDist);
 	}
 }

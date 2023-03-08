@@ -18,7 +18,7 @@ public class WanderSteer : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate()
 	{
-		body.AddForce(transform.up * speed);
+		body.AddForce(transform.forward * speed);
 		transform.Rotate(Vector3.back * (Random.value * 2 * angle - angle));
 	}
 }

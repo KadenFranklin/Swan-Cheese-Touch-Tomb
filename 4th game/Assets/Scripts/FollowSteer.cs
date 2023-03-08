@@ -33,6 +33,7 @@ public class FollowSteer : MonoBehaviour {
 
 	void OnCollisionEnter(Collision coll) {
 		if (coll.gameObject == target) {
+			// send player back to main screen
 			GetComponent<AudioSource>().Play();
 		}
 	}
