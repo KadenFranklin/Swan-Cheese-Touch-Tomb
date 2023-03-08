@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class FollowSteer : MonoBehaviour {
@@ -36,11 +37,12 @@ public class FollowSteer : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision coll) {
-		if (coll.gameObject == target) {
-            SceneManager.LoadScene("Death_scene");
+        if (coll.gameObject == target)
+        {
             GetComponent<AudioSource>().Play();
-		}
-	}
+            SceneManager.LoadScene("Death_scene");
+        }
+    }
 
 
     IEnumerator SwanSpeed()
