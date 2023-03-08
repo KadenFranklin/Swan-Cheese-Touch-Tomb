@@ -866,9 +866,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\nCredits:\n\nWater -\nhttps://github.com/Unity-Technologies/BoatAttack\_\_\nhttps://unitycoder.com/blog/2021/08/27/boat-attack-urp-water-add-underwater-surface-flip/\_\_
-    \n\nFish - https://alstrainfinite.itch.io/fish\n\nSwan -\n https://sketchfab.com/3d-models/swan-235a884d0a314b0fb9a2b235c711cb8c\n
-    https://www.flickr.com/photos/stanzim/22638659170\n\nEnvironment - https://assetstore.unity.com/packages/3d/environments/free-low-poly-desert-pack-106709"
+  m_text: "\nThank you for playing our game.\n\n\n\t\t\t\t\t\n\t\t\t\t           
+    Sorry you died.\n\n\n\n\t\t\t\t\t\n\t\t\t\t\t\tWe hope you understand now that
+    swans are dangerous.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -895,8 +895,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

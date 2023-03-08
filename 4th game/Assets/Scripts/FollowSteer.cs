@@ -10,8 +10,12 @@ public class FollowSteer : MonoBehaviour {
 
 	private Rigidbody body;
 
-	// Use this for initialization
-	void Start () {
+    void Awake()
+    {
+        StartCoroutine(SwanSpeed());
+    }
+
+    void Start () {
 		body = GetComponent<Rigidbody>();
 	}
 	
@@ -33,8 +37,21 @@ public class FollowSteer : MonoBehaviour {
 
 	void OnCollisionEnter(Collision coll) {
 		if (coll.gameObject == target) {
-			// send player back to main screen
-			GetComponent<AudioSource>().Play();
+            SceneManager.LoadScene("Death_scene");
+            GetComponent<AudioSource>().Play();
 		}
 	}
+
+
+    IEnumerator SwanSpeed()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(3);
+            IncreaseSpeed();
+			// After 60 seconds, the swan speed will be 10+.
+			// This basically makes the game unplayable. So the player has one minute to make it to the cave
+        }
+    }
+
 }
