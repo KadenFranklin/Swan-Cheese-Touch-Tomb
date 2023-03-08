@@ -12,6 +12,11 @@ public class FPSCamera : MonoBehaviour
     private float rotX;
     public GameObject fish;
 
+    void Awake()
+    {
+        StartCoroutine(UpdateFish());
+    }
+
     void Update()
     {
         MouseAiming();
@@ -41,19 +46,37 @@ public class FPSCamera : MonoBehaviour
         transform.Translate(dir * moveSpeed * Time.deltaTime);
     }
 
-   // void RotateFish()
-   // {   // MOVE Left
-   //     if (Input.GetAxis("Mouse X") > 0)
-   //     {
-   //         fish = fish.transform.Rotate(0, 0, 0);
-   //     }
-
-        // MOVE Right
-   //     if (Input.GetAxis("Mouse X") < 0)
-   //     {
-   //         fish = fish.transform.Rotate(0, 0, 0);
-   //     }
-   // }
-
-
+    IEnumerator UpdateFish()
+    {
+        float rot = 90.0f;  //rotation starts at 90 so we have to go with that
+        float d_rot = 1.0f;
+        bool dir_right = true;
+        
+        while (true) {
+            while (dir_right)
+            {
+                d_rot = 1.0f;
+                rot += d_rot;
+                if (rot >= 110.0f)
+                {
+                    dir_right = false;
+                }
+                fish.transform.Rotate(0.0f, d_rot, 0.0f, Space.Self);  //Rotate right
+                yield return new WaitForSeconds(0.1f);              
+            }
+        
+        
+            while (!dir_right)
+            {
+                d_rot = -1.0f;
+                rot += d_rot;
+                if (rot < 70.0f)
+                {
+                    dir_right = true;
+                }
+                fish.transform.Rotate(0.0f, d_rot, 0.0f, Space.Self);    //Rotate left 
+                yield return new WaitForSeconds(0.1f);               
+            }
+        }
+    }
 }
