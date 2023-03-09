@@ -6,7 +6,7 @@ Name: Swan-Escape
 
 Intent: To develop survival skills
 
-Narrative Structure:
+Narrative Structure: 
 
 Mechanics: The player moves around as though they are a fish, avoiding dangerous predators such as swans.
 
@@ -31,3 +31,5 @@ a listing of the attributions for your game assets (art, sounds, etc):
 a paragraph discussing the contributions of each team member to the final game:
 
 Kaden Franklin - I did a little bit of the asset collecting, I found the swan mesh and the tiles and environment. I implemented the swan, and set up most of the environment except for the cave.  I also gave the swan its movement, and made the fish rotate, to appear as though its swimming underwater. I tried to implement physics, but the collisions don't seem to work.
+
+Miguel Velazquez - I found the audio and the fonts for the game. I made the start and credit scenes, as well as the script that loads them in. I also corrected the .gitignore when it wasn't working properly in the beginning. I tried to make the caustics work for the water, but those attempts failed. I gathered the scripts needed for the steering. I corrected some small bugs in the scripts as well.
