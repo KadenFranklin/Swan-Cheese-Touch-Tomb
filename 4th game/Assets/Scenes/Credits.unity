@@ -161,7 +161,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -162}
+  m_AnchoredPosition: {x: 0, y: -142}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &117778261
@@ -843,7 +843,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 30, y: 95}
+  m_AnchoredPosition: {x: 30, y: 137}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1986990140
@@ -867,11 +867,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\nCredits:\n\nWater -\nhttps://github.com/Unity-Technologies/BoatAttack\_\_\nhttps://unitycoder.com/blog/2021/08/27/boat-attack-urp-water-add-underwater-surface-flip/\_\_
-    \n\nFish - https://alstrainfinite.itch.io/fish\n\nSwan -\n https://sketchfab.com/3d-models/swan-235a884d0a314b0fb9a2b235c711cb8c\n
-    https://www.flickr.com/photos/stanzim/22638659170\n\nEnvironment - https://assetstore.unity.com/packages/3d/environments/free-low-poly-desert-pack-106709"
+    \n\nFish - https://alstrainfinite.itch.io/fish\n\nSwan -\n https://sketchfab.com/3d-models/swan-235a884d0a314b0fb9a2b235c711cb8c\nhttps://www.flickr.com/photos/stanzim/22638659170\n\nEnvironment
+    - https://assetstore.unity.com/packages/3d/environments/free-low-poly-desert-pack-106709"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: da3681f488926fb43bbabc6445fc1f89, type: 2}
+  m_sharedMaterial: {fileID: 460872501108696071, guid: da3681f488926fb43bbabc6445fc1f89, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -895,8 +895,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -931,7 +931,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -337.02844, y: 0, z: -269.21844, w: -177.80402}
+  m_margin: {x: -337.02844, y: 0, z: -269.21844, w: -225.25293}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
