@@ -2,17 +2,17 @@
 a game for https://hendrix-cs.github.io/csci370/
 
 
-Name:
+Name: Swan-Escape
 
-Intent:
+Intent: To develop survival skills
 
-narrative structure:
+Narrative Structure:
 
-mechanics:
+Mechanics: The player moves around as though they are a fish, avoiding dangerous predators such as swans.
 
-aesthetics:
+Aesthetics: Many of the graphics are low-poly meshes that follow a similiar style. (With exception of the swan.)
 
-joys and struggles while writing this game:
+joys and struggles while writing this game: Collisions are hard, animating things is fun.
 
 a listing of the attributions for your game assets (art, sounds, etc):
 
@@ -29,3 +29,5 @@ a listing of the attributions for your game assets (art, sounds, etc):
   Tiles and environment: https://assetstore.unity.com/packages/3d/environments/free-low-poly-desert-pack-106709
 
 a paragraph discussing the contributions of each team member to the final game:
+
+Kaden Franklin - I did a little bit of the asset collecting, I found the swan mesh and the tiles and environment. I implemented the swan, and set up most of the environment except for the cave.  I also gave the swan its movement, and made the fish rotate, to appear as though its swimming underwater. I tried to implement physics, but the collisions don't seem to work.
